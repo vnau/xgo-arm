@@ -5,5 +5,5 @@ RUN mkdir /arm-toolchain && \
     tar -xjf gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2 && \
     rm gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2 && \
     apt-get update && \
-    apt-get -y install debhelper dh-systemd
+    apt-get -y install debhelper dh-systemd ssh
 ENV PATH="/arm-toolchain/gcc-arm-none-eabi-8-2018-q4-major/bin:${PATH}"
